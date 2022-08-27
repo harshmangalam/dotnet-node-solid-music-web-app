@@ -2,7 +2,7 @@ using ApiServer.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace BookStoreApi.Services;
+namespace ApiServer.Services;
 
 public class SongsService
 {

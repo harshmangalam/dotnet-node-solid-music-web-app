@@ -1,5 +1,5 @@
 using ApiServer.Models;
-// using ApiServer.Services;
+using ApiServer.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddControllers();
 builder.Services.Configure<MusicDatabaseSettings>(builder.Configuration.GetSection("MusicDatabase"));
-// builder.Services.AddSingleton<CategoryService>();
+builder.Services.AddSingleton<SongsService>();
 
 
 

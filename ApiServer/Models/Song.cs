@@ -7,6 +7,8 @@ public class Song
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
+    [BsonElement("_id")]
+
     public string? Id { get; set; }
 
     [BsonElement("title")]
