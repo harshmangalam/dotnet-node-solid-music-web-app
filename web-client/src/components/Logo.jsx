@@ -1,11 +1,11 @@
 import { Heading, HStack, Icon } from "@hope-ui/solid";
-import { RiMediaMusicFill } from "solid-icons/ri";
+import { SiApplemusic } from 'solid-icons/si'
 
 export default function Logo() {
   return (
-    <HStack>
-      <Icon as={RiMediaMusicFill} color="$primary10" />
-      <Heading>Rockify</Heading>
+    <HStack spacing={"$2"}>
+      <Icon as={SiApplemusic} color="$primary10" fontSize={"$4xl"} />
+      <Heading fontSize={"$3xl"}>Rockify</Heading>
     </HStack>
   );
 }
