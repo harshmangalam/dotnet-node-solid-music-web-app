@@ -20,8 +20,8 @@ public class Song
     [BsonElement("category")]
     public string Category { get; set; } = null!;
 
-    [BsonElement("singer")]
-    public string Singer { get; set; } = null!;
+    [BsonElement("artist")]
+    public string Artist { get; set; } = null!;
 
     [BsonElement("src")]
     public string Src { get; set; } = null!;
