@@ -1,17 +1,19 @@
 // 1. import `HopeProvider` component
-import { HopeProvider } from "@hope-ui/solid";
+import {  HopeProvider, Stack } from "@hope-ui/solid";
+import Navbar from "./components/Navbar";
 
 // 2. Wrap HopeProvider at the root of your app
 export default function App() {
-  const [data] = createResource(fetchSongs);
+  // const [data] = createResource(fetchSongs);
 
-  async function fetchSongs(){
-    const songs = await fetch("http://localhost")
-  }
+  
 
   return (
     <HopeProvider config={{ initialColorMode: "dark" }}>
       
+      <Stack minH={"$screenH"}>
+        <Navbar/>
+      </Stack>
     </HopeProvider>
   );
 }
